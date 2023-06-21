@@ -1,0 +1,129 @@
+/* Navbar  */
+@media screen and (max-width: 1130px){
+    #navbar {
+       display: flex;
+       flex-direction: column;
+       align-items: flex-start;
+       justify-content: flex-start;
+       position: fixed;
+       top: 0;
+       right: -200px;
+       height: 100vh;
+       width: 200px;
+       background-color: #e3e6f3;
+       box-shadow: 0 40px 60px rgba(0, 0, 0, 0.1);
+       padding: 80px 0 0 10px;
+       transition: 0.3s;
+    }
+    #navbar.active{
+        right: 0px;
+    }
+    #navbar li{
+        margin-bottom: 25px;
+    }
+    #navbar .active{
+        right: 200px;
+    }
+    #mobile{
+        display: flex;
+        align-items: center;
+    }
+    #mobile i{
+        color: black;
+        font-size: 25px;
+        padding-left: 20px;
+    }
+    #kapat{
+        display: initial;
+        position: absolute;
+        top: 30px;
+        left: 30px;
+        color: black;
+        font-size: 25px;
+    }
+    #lg-bag{
+        display: none;
+    }
+}
+
+/* kargo */
+@media screen and (max-width: 930px){
+    .kargo{
+        padding: 0;
+        text-align: center;
+    }
+}
+@media screen and (max-width: 768px){
+    .kargo .ozellik{
+        
+        /* display: block; */
+        text-align: center;
+        margin: auto;
+        margin-top: 20px;
+    }
+}
+@media screen and (max-width: 520px){
+    .kargo .ozellik{
+        width: 80%;
+        display: block;
+        margin: auto;
+        margin-top: 20px;
+    }
+}
+@media screen and (max-width: 350px){
+    .kargo .ozellik{
+        width: 100%;
+        display: block;
+        margin: auto;
+        margin-top: 20px;
+    }
+}
+
+/* uye ol */
+@media screen and (max-width: 992px){
+    .uye-ol{
+        width: 100%;
+        padding: 10px;
+        background-size: cover;
+    }
+    .form input{
+        width: 100%;
+        font-size: 20px;
+        padding: 30px 0;
+    }
+    .uye-ol .form .buton{
+        width: 120px;
+        padding: 30px 0;
+        display: flex;
+        justify-content: center;
+    }
+}
+/*  footer */
+@media screen and (max-width: 1150px){
+    .icon li a{
+        font-size: 30px;
+    }
+}
+@media screen and (max-width: 992px){
+    .footerr{
+        padding: 40px 10px;
+    }
+    .footerr .baslik{
+        margin: 0;
+        overflow: hidden;
+    }
+}
+@media screen and (max-width: 768px){
+    .kart-foter{
+        padding: 10px; 
+    }
+    .kart-foter .row{
+        padding: 0;
+        margin: 0;
+    }
+    .kart-foter .row .icon{
+       display: flex;
+       justify-content: center;
+       padding: 0;
+    }
+}

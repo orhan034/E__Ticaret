@@ -1,0 +1,288 @@
+
+/* hero image 2 */
+.hero-image2{
+    background-image: url("https://images.unsplash.com/photo-1614029951470-ef9eb9952be7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80");
+    height: 50vh;
+    width: 100%;
+    text-align: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;  
+}
+.hero-image2 h1{
+    margin-top: 50px;
+}
+.hero-image2 p{
+    font-size: 20px;
+    margin-top: 20px;
+}
+
+/* giriş yap start */
+
+/* kayit */
+.containers{
+    position: relative;
+    max-width: 430px;
+    width: 100%;
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+}
+.containers .formss{
+    display: flex;
+    align-items: center;
+    height: 450px;
+    width: 200%;
+    transition: height 0.5s ease;
+}
+.containers.active .formss{
+    height: 650px;
+}
+.containers .forms{
+    width: 50%;
+    padding: 30px;
+    transition: margin-left 0.18s ease;
+}
+.containers.active .giris{
+    margin-left: -50%;
+    opacity: 0;
+    transition: margin-left 0.18s ease, opacity 0.15s ease;
+}
+.containers .signup{
+    opacity: 0;
+    transition: opcity 0.09s ease;
+
+}
+.containers.active .signup{
+    opacity: 1;
+    transition: opacity 0.2s ease;
+}
+
+.containers .forms .title{
+    position: relative;
+    font-size: 30px;
+    font-weight: 600;
+} 
+
+.forms .title::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 3px;
+    width: 60px;
+    /* background-color: #088178; */
+    border-radius: 25px;
+}
+
+.forms .intup-icerik{
+    position: relative;
+    height: 45px;
+    width: 100%;
+    margin-top: 15px;
+}
+
+
+.intup-icerik input{
+    height: 100%;
+    width: 100%;
+    padding:0 35px;
+    font-size: 20px;
+    position: absolute;
+    border: none;
+    outline: none;
+    border-bottom: 2px solid #ccc;
+    border-top: 2px solid transparent;
+    transition: 0.3s;
+
+}
+
+ .intup-icerik input:is(:focus,:valid){
+    border-bottom-color: #088178;
+}
+ 
+.intup-icerik i{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #999;
+    font-size: 25px;
+}
+
+.forms .intup-icerik input:is(:focus,:valid) ~ i{
+    color: #088178;
+}
+
+.intup-icerik i.iconn{
+    left: 0;
+}
+
+.intup-icerik i.gozicon{
+    right: 0;
+    cursor: pointer;
+    padding: 10px;
+}
+
+.forms .checkbox-text{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.checkbox-text .checkbox-content{
+    display: flex;
+    align-items: center;
+}
+
+.checkbox-content input{
+    margin: 0 7px -2px 5px;   
+}
+
+.forms a.text{
+    color: blue;
+    text-decoration: none;
+}
+
+.forms .text{
+    color: #333;
+    font-size: 17px;
+}
+
+.forms a:hover{
+    text-decoration: none;
+    text-decoration: underline;
+}
+
+.forms .buton{
+    margin-top: 30px;
+}
+
+.forms .buton input{
+    border: none;
+    color: rgb(26, 19, 19);
+    font-weight: 600;
+    letter-spacing: 1px;
+    /* border-radius: 5px; */
+    /* background-color: #088178; */
+}
+
+
+.forms .login-signup{
+    margin-top: 30px;
+    text-align: center;
+} 
+
+/* uye ol */
+.aaaa{
+    margin-top: 100px !important;
+}
+.uye-ol{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    background-image: url("img/uye.jfif");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 200px;
+}
+.uye-ol{
+    padding-left:  80px;
+    padding-right: 120px;
+}
+.uye h4{
+    font-size: 30px;
+    color: white;
+    font-weight: bold;
+}
+.uye-ol .form{
+    display: flex;
+}
+.form input{
+    height: 40px;
+    width: 45%;
+    padding: 30px;
+    font-size: 25px;
+    width: 100%;
+    border: 1px solid transparent;
+    border-radius: 6px 0 0 6px;
+    border: none;
+    outline: none; 
+}
+.uye-ol .form .buton{
+    height: 40px;
+    width: 180px;
+    padding: 30px;
+    font-size: 25px;
+    border-radius:0 6px 6px 0;
+    border: none;
+    display: flex;
+    align-items: center;
+    background-color: #088178;
+    color: white;
+    font-weight: bold;
+}
+.form input:focus{
+    border: none;
+}
+
+/* giriş yap end */
+
+/* uye ol */
+/* .uye-ol{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    background-image: url("img/uye.jfif");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 200px;
+}
+.uye-ol{
+    padding-left:  80px;
+    padding-right: 120px;
+}
+.uye h4{
+    font-size: 30px;
+    color: white;
+    font-weight: bold;
+}
+.uye-ol .form{
+    display: flex;
+}
+.form input{
+    height: 40px;
+    width: 45%;
+    padding: 30px;
+    font-size: 25px;
+    width: 100%;
+    border: 1px solid transparent;
+    border-radius: 6px 0 0 6px;
+    border: none;
+    outline: none; 
+}
+.uye-ol .form .buton{
+    height: 40px;
+    width: 180px;
+    padding: 30px;
+    font-size: 25px;
+    border-radius:0 6px 6px 0;
+    border: none;
+    display: flex;
+    align-items: center;
+    background-color: #088178;
+    color: white;
+    font-weight: bold;
+}
+.form input:focus{
+    border: none;
+} */
+
+
+/* footer */

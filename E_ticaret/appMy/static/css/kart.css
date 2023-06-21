@@ -1,0 +1,358 @@
+
+/* hero image */
+.hero-image2{
+    background-image: url("https://images.unsplash.com/photo-1511733897353-5b04f82435a8?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80");
+    height: 50vh;
+    width: 100%;
+    text-align: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;  
+}
+.hero-image2 h1{
+    margin-top: 50px;
+    color: white;
+}
+.hero-image2 p{
+    font-size: 20px;
+
+    margin-top: 20px;
+}
+
+/* cart */
+.cart-image a img{
+    width: 120px;
+}
+/* .kart-baslik ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    margin-top: 50px;
+}
+.kart-baslik ul li{
+    display: flex;
+    align-items: center;
+    font-weight: 400;
+}
+.kart-baslik ul li a{
+    text-decoration: none;
+    padding: 3px 10px;
+    background-color: #f08a05;
+    color: white;
+    margin-right: 20px;
+} */
+/* .Shopping-Cart{
+    color: #8a8887;
+} */
+.cart-icerik{
+    width: 100%;
+    overflow: auto;   
+}
+thead{
+    background-color: #088178;   
+}
+.cart-icerik{
+    border: 1px solid #c2bfba;
+    margin-bottom: 50px;  
+}
+table{
+    max-width: 100%;
+}
+.kapsayici-table{
+    width: 100%;
+}
+.cart-navbar td{
+    padding: 10px 15px;
+}
+.cart-navbar{
+    color: #fff;
+    font-size: 20px;
+    font-weight: 600;
+}
+.cart-navbar .item{
+    width: 20%;
+}
+.cart-navbar .bosluk{
+    width: 30%;
+}
+.cart-navbar .price{
+    width: 10%;
+}
+.cart-navbar .quantity{
+    width: 20%;
+}
+.cart-navbar .total{
+    width: 10%;
+}
+.cart-yazi h5{
+    margin: 0;
+}
+.fiyat h4{
+    margin-left: 15px;
+}
+tbody{
+    border-bottom: 1px solid rgb(230, 222, 222);
+}
+.buton{
+    padding: 0 6px;
+    font-size: 15px;
+    background-color: #8a8887;
+    border: none;
+    color: white;
+    font-weight: bold;
+    margin-left: 10px;
+}
+.buton111{
+    padding: 0 6px;
+    font-size: 15px;
+    background-color: #8a8887;
+    border: none;
+    color: white;
+    font-weight: bold;
+    margin-left: 10px;
+}
+.buton1{
+    padding: 0 8px;
+    font-size: 15px;
+    background-color: #8a8887;
+    border: none;
+    color: white;
+    font-weight: bold;
+}
+.buton11{
+    padding: 0 8px;
+    font-size: 15px;
+    background-color: #8a8887;
+    border: none;
+    color: white;
+    font-weight: bold;
+}
+.buton1111{
+    padding: 0 6px;
+    margin-left: 10px;
+    font-size: 15px;
+    background-color: #8a8887;
+    border: none;
+    color: white;
+    font-weight: bold;
+}
+.buton_1{
+    padding: 0 8px;
+    font-size: 15px;
+    background-color: #8a8887;
+    border: none;
+    color: white;
+    font-weight: bold;
+}
+.toplamtr p{
+    margin: 0;
+    margin-left: 15px;
+    font-size: 25px;
+    font-weight: 600;
+    color: #474442;
+}
+.sifirla button{
+    margin-left: 10px;
+    padding: 2px 10px;
+    background-color: #8a8887;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    transition: 0.6s;
+    border: none;
+}
+.sifirla button:hover{
+    background-color: #088178;
+}
+.adet2{
+   border: 1px solid black;
+   text-align: center;
+   padding: 0 10px;
+}
+.adet22{
+   border: 1px solid black;
+   text-align: center;
+   padding: 0 10px;
+}
+.adet222{
+   border: 1px solid black;
+   text-align: center;
+   padding: 0 10px;
+}
+/* Ödeme */
+.odeme-baslik h4{
+    color: #3a3837;
+}
+.a{
+    text-align: start;
+    border: 1px solid #e2dfde;
+    padding: 30px;
+}
+.cart-icerikk{
+    padding: 0; 
+}
+.col1-icerikk ul{
+    padding: 0;
+}
+.col1-icerikk li{
+    list-style-type: none;
+}
+select{
+    width: 100%;
+    padding: 3px;
+    border: none;
+    background-color: #c2bfba;
+}
+.country{
+    color: #5a5857;
+    width: 100%;
+}
+.zip-code input{
+    width: 100%;
+}
+.col1-icerik-btn{
+    color: white;
+    margin-top: 38px;
+    padding: 5px 10px;
+    border: none;
+    font-size: 17px;
+    font-weight: 500;
+    margin-right: 15px;
+    background-color: #088178;
+    transition: 0.6s;
+}
+.col1-icerik-btn:hover{
+    background-color: #8a8887;
+}
+.card_total{
+    display:inline-block;
+}
+.col2_icerik li{
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 5px 15px;
+    background-color: #e7e5e2;
+}
+.col2_icerik li {
+    display: flex;
+    justify-content: space-between;
+}
+.col2-icerik-btn{
+    color: white;
+    padding: 5px 10px;
+    border: none;
+    font-size: 17px;
+    font-weight: 500;
+    margin-right: 15px;
+    background-color: #088178;
+    transition: 0.6s;
+}
+.col2-icerik-btn:hover{
+    background-color: #8a8887;
+}
+/* Ödeme responsiv */
+@media screen and (max-width:768px){
+    .a{
+        width: 100%;
+        margin: 0;
+    }
+}
+@media screen and (max-width:428px){
+    .sel{
+        width: 100%;
+    }
+    .zip-code{
+        margin-top: 10px;
+        width: 60%;
+    }
+    .col1-icerik-btn{
+        margin-top: 20px;
+    }
+}
+@media screen and (max-width:335px){
+    .col2-icerik-btn{
+        margin-bottom: 10px;
+    }
+    .col1-icerik-btn{
+        margin-top: 10px;
+    }
+}
+
+
+/* uye ol */
+/* .uye-ol{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    background-image: url("img/uye.jfif");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 200px;
+}
+.uye-ol{
+    padding-left:  80px;
+    padding-right: 120px;
+}
+.uye h4{
+    font-size: 30px;
+    color: white;
+    font-weight: bold;
+}
+.uye-ol .formuye{
+    display: flex;
+    
+}
+.formuye input{
+    height: 40px;
+    width: 45%;
+    padding: 30px;
+    font-size: 25px;
+    width: 100%;
+    border: 1px solid transparent;
+    border-radius: 6px 0 0 6px;
+    border: none;
+    outline: none;
+    
+}
+.uye-ol .formuye .buttton{
+    height: 40px;
+    width: 180px;
+    padding: 30px;
+    font-size: 25px;
+    border-radius:0 6px 6px 0;
+    border: none;
+    display: flex;
+    align-items: center;
+    background-color: #088178;
+    color: white;
+    font-weight: bold;
+    
+}
+.formuye input:focus{
+    border: none;
+}
+@media screen and (max-width: 992px){
+    .uye-ol{
+        width: 100%;
+        padding: 10px;
+        background-size: cover;
+    }
+    .formuye input{
+        width: 100%;
+        font-size: 20px;
+        padding: 30px 0;
+    }
+    .uye-ol .formuye .buttton{
+        width: 120px;
+        padding: 30px 0;
+        display: flex;
+        justify-content: center;
+    }
+} */
+
+/* footer */

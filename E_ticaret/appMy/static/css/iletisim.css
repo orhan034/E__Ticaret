@@ -1,0 +1,222 @@
+
+/* hero image */
+.hero-image2{
+    background-image: url("https://images.unsplash.com/photo-1487017159836-4e23ece2e4cf?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1171&q=80");
+    height: 50vh;
+    width: 100%;
+    text-align: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;  
+ 
+}
+.hero-image2 h1{
+    margin-top: 50px;
+    color: white;
+}
+.hero-image2 p{
+    font-size: 20px;
+
+    margin-top: 20px;
+}
+
+/* contact */
+.contactad h5{
+    text-align: center;
+    color: #088178;
+}
+.contactad hr{
+    border: 1px solid #8a8887;
+}
+.contact iframe{
+    width: 100%;
+    opacity: 0.9;
+}
+/* iletişim başlık */
+.iletisim h5{
+    text-align: center;
+    color: #088178;
+    font-size: 17px;
+    font-weight: 600;
+}
+.iletisim hr{
+    border: 1px solid #8a8887;
+}
+/* iletişim form */
+.formiletisim input{
+    width: 100%;
+    margin-top: 20px;
+    padding: 5px;
+    outline: none;
+    transition: 0.7s;
+    border-radius: 7px;
+    border: 1px solid rgb(211, 202, 202);
+}
+.formiletisim input:focus{
+    border: 1px solid #088178;
+}
+textarea{
+    margin-top: 20px;
+    width: 100%;
+    border-radius: 7px;
+    min-height: 150px;
+    max-height: 150px;
+    outline: none;
+    border: 1px solid rgb(211, 202, 202);
+    padding: 10px;
+    transition: 0.7s;
+}
+textarea:focus{
+    border: 1px solid #088178;
+}
+.submit_btn{
+    width: 80px !important;
+    margin-top: 30px;
+    padding: 5px 10px;
+    background-color: #088178;
+    color: white; 
+    font-size: 20px;
+    border: navajowhite;
+    transition: 0.6s;
+    font-weight: 600;
+}
+.submit_btn:hover{
+    color: white;
+    background-color: blue;
+}
+.contactinfo{
+    margin-top: 14px;
+}
+.contactinfo p{
+    margin: 0;
+    margin-left: 20px;
+    color: #8a8887;
+}
+.contact_icon ul{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+.contact_icon li{
+    list-style-type: none;
+}
+.contact_icon li a{
+    font-size: 30px;
+    color: #8a8887;
+    padding: 0px 10px;
+    transition: 0.6s;
+}
+.contact_icon li a:hover{
+    color: #088178;
+}
+
+/* kargo işlemleri */
+.kargo{
+    text-align: center;
+    padding: 40px 80px; 
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.kargo .ozellik{
+  width: 250px; 
+  text-align: center; 
+  padding: 25px 15px;
+  box-shadow: 20px 20px 35px rgba(0, 0, 0, 0.03);
+  border: 1px solid rgb(216, 211, 211);
+  border-radius: 5px;
+  margin: 15px 0;
+  transition: 0.3s;
+}
+.kargo .ozellik:hover{
+    box-shadow: 10px 10px 55px rgba(70, 60, 220, 0.2);
+}
+.kargo .ozellik img{
+    width: 100%;
+    height: 170px;
+    margin-bottom: 10px;
+}
+.kargo .ozellik h3{
+    display: inline-block;
+    padding: 7px 10px;
+    border-radius: 5px ;
+    color: #088178;
+    background-color: #be9ba2;
+}
+.kargo .ozellik:nth-child(2) h3{
+    background-color: #7874a2;
+}
+.kargo .ozellik:nth-child(3) h3{
+    background-color: #b88395;
+}
+.kargo .ozellik:nth-child(4) h3{
+    background-color: #c5b37d;
+}
+.kargo .ozellik:nth-child(5) h3{
+    background-color: #8cd28a;
+}
+.kargo .ozellik:nth-child(6) h3{
+    background-color: #a99cdd;
+}
+
+
+/* uye ol */
+/* .uye-ol{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    background-image: url("img/uye.jfif");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 200px;
+}
+.uye-ol{
+    padding-left:  80px;
+    padding-right: 120px;
+}
+.uye h4{
+    font-size: 30px;
+    color: white;
+    font-weight: bold;
+}
+.uye-ol .form{
+    display: flex;
+    
+}
+.form input{
+    height: 40px;
+    width: 45%;
+    padding: 30px;
+    font-size: 25px;
+    width: 100%;
+    border: 1px solid transparent;
+    border-radius: 6px 0 0 6px;
+    border: none;
+    outline: none;
+    
+}
+.uye-ol .form .buton{
+    height: 40px;
+    width: 180px;
+    padding: 30px;
+    font-size: 25px;
+    border-radius:0 6px 6px 0;
+    border: none;
+    display: flex;
+    align-items: center;
+    background-color: #088178;
+    color: white;
+    font-weight: bold;
+    
+}
+.form input:focus{
+    border: none;
+} */
+
+/* footer */

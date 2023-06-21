@@ -1,0 +1,222 @@
+{% extends 'base.html' %}
+{% load static %}
+
+
+{% block body %}
+  
+    <!-- slayt -->
+    <div class="container-fluid p-0">
+    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+        <h4>Aradığınız her şey E-ticaret'de</h4>
+        <hr>
+        <a href="#"><img src="{% static 'img/s1.webp' %}" alt="resim">
+        </a>
+        <a href="#"><img src="{% static 'img/s2.webp' %}" alt="resim"></a>
+        <a href="#"><img src="{% static 'img/s3.webp' %}" alt="resim"></a>
+        <a href="#"><img src="{% static 'img/s4.webp' %}" alt="resim"></a>
+        <a href="#"><img src="{% static 'img/s5.webp' %}" alt="resim"></a>
+        <a href="#"><img src="{% static 'img/s6.webp' %}" alt="resim"></a>
+        <a href="#"><img src="{% static 'img/s7.webp' %}" alt="resim"></a>
+        <a href="#"><img src="{% static 'img/s8.webp' %}" alt="resim"></a>
+        <a href="#"><img src="{% static 'img/s9.webp' %}" alt="resim"></a>
+        <a href="#"><img src="{% static 'img/10.webp' %}" alt="resim"></a>
+          
+      </div>
+      <div class="carousel-item">
+        <h4>Aradığınız her şey E-ticaret'de</h4>
+        <hr>  
+        <a href="#"><img src="{% static 'img/s1.webp' %}" alt="resim"></a>
+        <a href="#"><img src="{% static 'img/s2.webp' %}" alt="resim"></a>
+        <a href="#"><img src="{% static 'img/s3.webp' %}" alt="resim"></a>
+        <a href="#"><img src="{% static 'img/s4.webp' %}" alt="resim"></a>
+        <a href="#"><img src="{% static 'img/s5.webp' %}" alt="resim"></a>
+        <a href="#"><img src="{% static 'img/s6.webp' %}" alt="resim"></a>
+        <a href="#"><img src="{% static 'img/s7.webp' %}" alt="resim"></a>
+        <a href="#"><img src="{% static 'img/s8.webp' %}" alt="resim"></a>
+        <a href="#"><img src="{% static 'img/s9.webp' %}" alt="resim"></a>
+        <a href="#"><img src="{% static 'img/10.webp' %}" alt="resim"></a>
+
+        </div>
+       
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+    </div>
+
+    <!-- hero image -->
+    <div class="container-fluid p-0 hero">
+      <div class="hero-image">
+        <h3>Takas mevcuttur</h3>
+        <h2>Süper değer fırsatları</h2>
+        <h1>Tüm ürünlerde.</h1>
+        <p>%70'e varan indirimler'le daha fazla kupon kayd edin.</p>
+        
+        {% if request.user.is_authenticated %}
+          <a href="{% url 'kart' %}">
+          <span>Alışveriş Yap</span>
+        </a>
+        {% else %}
+        <a href="">
+          <span>Alışveriş Yap</span>
+        </a>
+        {% endif %}
+          
+        
+      </div>
+    </div>
+
+    <!-- kargo -->
+    <div class="container-fluid  kargo">
+          <div class="ozellik">
+            <img src="{% static 'img/k1.jpg' %}" alt="resim">
+            <h3>Ücretsiz Kargo</h3>
+          </div>
+            <div class="ozellik">
+              <img src="{% static 'img/k2.jfif' %}" alt="resim">
+              <h3>Online Sifariş</h3>
+            </div>
+            <div class="ozellik">
+              <img src="{% static 'img/k3.png' %}" alt="resim">
+              <h3>Para Biriktir</h3>
+            </div>
+          <div class="ozellik">
+            <img src="{% static 'img/k3.jfif' %}" alt="resim">
+            <h3>Terfi al</h3>
+          </div>
+            <div class="ozellik">
+              <img src="{% static 'img/k5.jfif' %}" alt="resim">
+              <h3>Mutlu Satış</h3>
+            </div>
+            <div class="ozellik">
+              <img src="{% static 'img/k6.jfif' %}" alt="resim">
+              <h3>24/7 Destek</h3>
+            </div>
+    </div>
+
+    <!-- Özel ürünler -->
+    <div class="container-fluid">
+      <div class="ozel-urun ">
+        <h1>Özel Ürünler</h1>
+        <p>Kış kolleksiyonu yeni modern tasarım</p>
+        <div class="row">
+
+          
+          {% for i in products %}
+              <div class="col-xxl-3 col-xl-4 col-lg-4 col-sm-6 mb-4">
+              <div class="ozel">
+                <a href="{% url 'detail' i.product.slug %}"><img src="{{ i.product.image.url }}" alt="resim"></a>
+                <div class="ozel-bilgi">
+                  <span>{{ i.product.brand }}</span>
+                  <h5>{{ i.product.title }}</h5>
+                  <div class="yildiz">
+                   <i class="fas fa-star"></i>
+                   <i class="fas fa-star"></i>
+                   <i class="fas fa-star"></i>
+                   <i class="fas fa-star"></i>
+                   <i class="fas fa-star"></i>
+                  </div>
+                  <h4>{{ i.product.price }} TL</h4>
+                </div>
+                <a href="{% url 'detail' i.product.slug %}"><i class="fas fa-shopping-cart cart"></i></a>
+               </div>
+            </div>
+            {% endfor %}
+          
+        </div>
+      </div>
+    </div>
+
+    <!-- hero img 2 -->
+    <div class="container-fluid p-0 mb-5">
+      <div class="hero-image2">
+        <h1>Tüm Sweatshirt ve Aksesuarlar'da %70 varan İndirim</h1>
+        <button>Daha Fazlasını Keşif Edin</button>
+      </div>
+    </div>
+
+    <!-- Yeni -->
+    <div class="container-fluid">
+          <div class="ozel-urun ">
+            <h1>Yeni Ürünler</h1>
+            <p>Kış kolleksiyonu yeni modern tasarım</p>
+            <div class="row">
+              
+              {% for i in products_yeni %}
+              <div class="col-xxl-3 col-xl-4 col-lg-4 col-sm-6 mb-4">
+              <div class="ozel">
+                <a href="{% url 'detail' i.product.slug %}"><img src="{{ i.product.image.url }}" alt="resim"></a>
+                <div class="ozel-bilgi">
+                  <span>{{ i.product.brand }}</span>
+                  <h5>{{ i.product.title }}</h5>
+                  <div class="yildiz">
+                   <i class="fas fa-star"></i>
+                   <i class="fas fa-star"></i>
+                   <i class="fas fa-star"></i>
+                   <i class="fas fa-star"></i>
+                   <i class="fas fa-star"></i>
+                  </div>
+                  <h4>{{ i.product.price }} TL</h4>
+                </div>
+                <a href="{% url 'detail' i.product.slug %}">
+                  <i class="fas fa-shopping-cart cart">
+                    
+                  </i></a>
+               </div>
+            </div>
+            {% endfor %}
+           
+             
+            </div>
+          </div>
+    </div>
+
+    <!-- çılgın fırsat -->
+    <div class="container-fluid cilgin-firsat mb-5">
+     
+      <div class="row">
+        <div class="col-lg-6 col-12">
+          <div class="cilgin">
+            <h4>Çılgın fırsatlar</h4>
+            <h2>Bir alana Bir bedava</h2>
+            <p>En iyi classic elbise E-Ticaret'de</p>
+            <button>Daha fazla bilgi edin</button>
+          </div>
+        </div>
+        <div class="col-lg-6 col-12">
+          <div class="cilgin">
+            <h4>Çılgın fırsatlar</h4>
+            <h2>Yaklaşan sezon</h2>
+            <p>En iyi classic elbise E-Ticaret'de</p>
+            <button>Kolleksiyon</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+    <!-- Üye Ol -->
+    {% include 'part/_uye.html' %}
+    {% block js %}
+   
+    <script>
+        const navbarbaslikEl = document.querySelector(".navbarbaslik")
+        window.addEventListener("scroll",()=>{
+        if(window.scrollY > 820){
+        navbarbaslikEl.classList.add("active")
+        }
+        else{
+        navbarbaslikEl.classList.remove("active")
+        }
+        });
+    </script>
+    {% endblock js %}
+
+{% endblock body %}

@@ -1,0 +1,91 @@
+
+/* hero image 2 */
+.hero-image2{
+    background-image: url("https://images.unsplash.com/photo-1612188842101-f976582906fc?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=764&q=80");
+    height: 50vh;
+    width: 100%;
+    text-align: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;  
+}
+.hero-image2 h1{
+    margin-top: 50px;
+    color: white;
+}
+.hero-image2 p{
+    font-size: 20px;
+    margin-top: 20px;
+    color: white;
+}
+
+
+/* diğer sayfa no */
+.numaralar {
+    text-align: center;
+    margin-top: 20px;
+}
+.numaralar a{
+    text-decoration: none;
+    background-color: #088178;
+    color: white;
+    padding: 15px 25px;
+    margin-right: 10px;
+    border-radius: 6px;
+}
+
+/* uye ol */
+/* .uye-ol{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    background-image: url("img/uye.jfif");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 200px;
+}
+.uye-ol{
+    padding-left:  80px;
+    padding-right: 120px;
+}
+.uye h4{
+    font-size: 30px;
+    color: white;
+    font-weight: bold;
+}
+.uye-ol .form{
+    display: flex;
+}
+.form input{
+    height: 40px;
+    width: 45%;
+    padding: 30px;
+    font-size: 25px;
+    width: 100%;
+    border: 1px solid transparent;
+    border-radius: 6px 0 0 6px;
+    border: none;
+    outline: none; 
+}
+.uye-ol .form .buton{
+    height: 40px;
+    width: 180px;
+    padding: 30px;
+    font-size: 25px;
+    border-radius:0 6px 6px 0;
+    border: none;
+    display: flex;
+    align-items: center;
+    background-color: #088178;
+    color: white;
+    font-weight: bold;
+}
+.form input:focus{
+    border: none;
+} */
+
+

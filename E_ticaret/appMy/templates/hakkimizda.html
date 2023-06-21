@@ -1,0 +1,82 @@
+{% extends 'base.html' %}
+{% load static %}
+
+
+{% block body %}
+  
+    
+    <!-- hero img 2 -->
+    <div class="container-fluid p-0 mb-5">
+        <div class="hero-image2">
+          <h1>Bizi Tanıyın.</h1>
+          <p></p>
+        </div>
+    </div>
+
+    <!-- hakkımızda -->
+    <div class="container-fluid">
+      <div class="hakimizda">
+        <div class="row">
+          <div class="col-lg-6">
+            <img src="{% static 'img/hakkimizda2.jfif' %}" alt="resim">
+          </div>
+          <div class="col-lg-6">
+            <div class="biz-kimiz">
+            <h1>Biz Kimiz?</h1>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum ducimus cum, officiis expedita quia cumque ratione nulla neque voluptatum non ipsum quidem rem sequi iste ad laudantium vero dolor. Asperiores?
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eos nesciunt ea officia distinctio voluptatibus mollitia, molestiae facilis dolore. Sunt aperiam porro qui natus sequi adipisci libero sit, placeat inventore consequatur.
+              Lorem ipsum dolor sit amet 
+            </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- kargo -->
+    <div class="container-fluid  kargo">
+      <div class="ozellik">
+        <img src="{% static 'img/k1.jpg' %}" alt="resim">
+        <h3>Ücretsiz Kargo</h3>
+      </div>
+        <div class="ozellik">
+          <img src="{% static 'img/k2.jfif' %}" alt="resim">
+          <h3>Online Sifariş</h3>
+        </div>
+        <div class="ozellik">
+          <img src="{% static 'img/k3.png' %}" alt="resim">
+          <h3>Para Biriktir</h3>
+        </div>
+      <div class="ozellik">
+        <img src="{% static 'img/k3.jfif' %}" alt="resim">
+        <h3>Terfi al</h3>
+      </div>
+        <div class="ozellik">
+          <img src="{% static 'img/k5.jfif' %}" alt="resim">
+          <h3>Mutlu Satış</h3>
+        </div>
+        <div class="ozellik">
+          <img src="{% static 'img/k6.jfif' %}" alt="resim">
+          <h3>24/7 Destek</h3>
+        </div>
+    </div>
+
+    <!-- Üye Ol -->
+    {% include 'part/_uye.html' %}
+
+{% block js %}
+<script>
+  const navbarbaslikEl = document.querySelector(".navbarbaslik")
+  window.addEventListener("scroll",()=>{
+  if(window.scrollY > 380){
+    navbarbaslikEl.classList.add("active")
+  }
+  else{
+    navbarbaslikEl.classList.remove("active")
+  }
+  });
+</script>
+{% endblock js %}
+  
+{% endblock body %}
